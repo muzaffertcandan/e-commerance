@@ -23,7 +23,7 @@
             <img src="/e-commerance/images/logo.png" width="125px" />
           </div>
           <nav>
-            <ul>
+            <ul id="MenuItems">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
@@ -32,6 +32,7 @@
             </ul>
           </nav>
           <img src="/e-commerance/images/cart.png" width="30px" height="30px" />
+          <img src="/e-commerance/images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
         <div class="row">
           <div class="col-2">
@@ -79,7 +80,7 @@
         <div class="col-4">
           <img src="/e-commerance/images/product-1.jpg" />
           <h4>Red Printed T-shirt</h4>
-          <div class="rating">
+          <div class="rating redd">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -92,7 +93,7 @@
           <img src="/e-commerance/images/product-2.jpg" />
           <h4>Red Printed T-shirt</h4>
           <div class="rating">
-            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star redd"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -231,13 +232,24 @@
     <div class="offer">
       <div class="small-container">
         <div class="row">
-          <div class="col-2"><img src="/e-commerance/images/exclusive.png" class="offer-img" alt=""></div>
-          <div class="col-2"><p>Exclusively Avaible on MtcStore</p>
-          <h1>Smart band</h1>
-        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia tempore labore eaque quam cum quasi minus in magnam reprehenderit dolor.</small>
-        <br>
-        <a href="" class="btn">Buy Now &#8594;</a>
-        </div>
+          <div class="col-2">
+            <img
+              src="/e-commerance/images/exclusive.png"
+              class="offer-img"
+              alt=""
+            />
+          </div>
+          <div class="col-2">
+            <p>Exclusively Avaible on MtcStore</p>
+            <h1>Smart band</h1>
+            <small
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+              tempore labore eaque quam cum quasi minus in magnam reprehenderit
+              dolor.</small
+            >
+            <br />
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
         </div>
       </div>
     </div>
@@ -246,8 +258,11 @@
       <div class="small-container">
         <div class="row">
           <div class="col-3">
-              <i class="fa fa-quote-left"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate deleniti praesentium libero amet quas?</p>
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              cupiditate deleniti praesentium libero amet quas?
+            </p>
             <div class="rating">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -255,42 +270,128 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <img src="/e-commerance/images/user-1.png" alt="">
+            <img src="/e-commerance/images/user-1.png" alt="" />
             <h3>Sean Parker</h3>
           </div>
-          
+
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate deleniti praesentium libero amet quas?</p>
-          <div class="rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              cupiditate deleniti praesentium libero amet quas?
+            </p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="/e-commerance/images/user-2.png" alt="" />
+            <h3>Peter Parker</h3>
           </div>
-          <img src="/e-commerance/images/user-2.png" alt="">
-          <h3>Peter Parker</h3>
-        </div>
-        
-        <div class="col-3">
-          <i class="fa fa-quote-left"></i>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate deleniti praesentium libero amet quas?</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <img src="/e-commerance/images/user-3.png" alt="">
-        <h3>None Parker</h3>
-      </div>
+
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              cupiditate deleniti praesentium libero amet quas?
+            </p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img class="immagine" src="/e-commerance/images/user-3.png"/>
+            <h3>None Parker</h3>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- brands -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="/e-commerance/images/logo-oppo.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="/e-commerance/images/logo-godrej.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="/e-commerance/images/logo-coca-cola.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="/e-commerance/images/logo-paypal.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="/e-commerance/images/logo-philips.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
+      <!-- foooter -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+         <div class="footer-col-1">
+           <h3>Download Our App</h3>
+           <p>For Android and IOS Mobile Phone</p>
+           <div class="app-logo">
+             <img src="/e-commerance/images/play-store.png" alt="">
+             <img src="/e-commerance/images/app-store.png" alt="">
+           </div>
+         </div> 
+         <div class="footer-col-2">
+           <img src="/e-commerance/images/logo-white.png" alt="">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolorem.</p>
+          </div> 
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div> 
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>İnstagram</li>
+              <li>Twitter</li>
+              <li>Youtube</li>
+            </ul>
+          </div> 
+        </div>
+        <hr>
+        <p class="copyright">Copyright-Muzaffer</p>
+      </div>
+    </div>
+    
+    <!-- js for toggle menu -->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {     
+          MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/8537e3f590.js"
